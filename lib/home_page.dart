@@ -1,4 +1,5 @@
 import 'package:calculator/my_button.dart';
+import 'package:calculator/neu_button.dart';
 import 'package:flutter/material.dart';
 import 'package:math_expressions/math_expressions.dart';
 
@@ -86,7 +87,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.deepPurple[300],
         body: Column(
           children: [
             //display question and answer
@@ -136,18 +137,19 @@ class _HomePageState extends State<HomePage> {
                 ),
                 itemBuilder: (context, index) {
                   if (index == 0) {
-                    return MyButton(
+                    return NeuButton(
                       child: button[index],
-                      color: Colors.yellow, //Color.fromARGB(255, 69, 174, 76),
-                      textColor: Colors.black,
+                      color: Colors
+                          .deepPurple[300], //Color.fromARGB(255, 69, 174, 76),
+                      textColor: Colors.white,
                       function: () {
                         pressedButton(button[index]);
                       },
                     );
                   } else if (index == 1) {
-                    return MyButton(
+                    return NeuButton(
                       child: button[index],
-                      color: Colors.grey, //Color.fromARGB(255, 255, 0, 0),
+                      color: Colors.deepPurple[300],
                       textColor: Colors.white,
                       function: () {
                         pressedButton(button[index]);
@@ -159,18 +161,18 @@ class _HomePageState extends State<HomePage> {
                       index == 11 ||
                       index == 15 ||
                       index == 19) {
-                    return MyButton(
+                    return NeuButton(
                       child: button[index],
-                      color: Colors.brown,
+                      color: Colors.deepPurple[300],
                       textColor: Colors.white,
                       function: () {
                         pressedButton(button[index]);
                       },
                     );
                   } else {
-                    return MyButton(
+                    return NeuButton(
                       child: button[index],
-                      color: const Color.fromARGB(255, 35, 35, 35),
+                      color: Colors.deepPurple[300],
                       textColor: Colors.white,
                       function: () {
                         pressedButton(button[index]);
