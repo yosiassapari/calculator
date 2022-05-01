@@ -4,9 +4,9 @@ class NeuButton extends StatelessWidget {
   final String? child;
   final Color? color;
   final Color? textColor;
-  final function;
+  final Function() function;
 
-  NeuButton({
+  const NeuButton({
     required this.child,
     required this.color,
     required this.textColor,
@@ -49,7 +49,7 @@ class NeuButton extends StatelessWidget {
                   Colors.deepPurple.shade200,
                   Colors.deepPurple.shade400,
                 ],
-                stops: [
+                stops: const [
                   0.1,
                   0.9,
                 ]),
