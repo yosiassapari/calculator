@@ -4,9 +4,9 @@ class MyButton extends StatelessWidget {
   final String? child;
   final Color? color;
   final Color? textColor;
-  final function;
+  final Function() function;
 
-  MyButton({
+  const MyButton({
     required this.child,
     required this.color,
     required this.textColor,
