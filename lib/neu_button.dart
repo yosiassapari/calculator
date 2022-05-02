@@ -7,11 +7,12 @@ class NeuButton extends StatelessWidget {
   final Function() function;
 
   const NeuButton({
+    Key? key,
     required this.child,
     required this.color,
     required this.textColor,
     required this.function,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
