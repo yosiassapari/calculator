@@ -7,11 +7,12 @@ class MyButton extends StatelessWidget {
   final Function() function;
 
   const MyButton({
+    Key? key,
     required this.child,
     required this.color,
     required this.textColor,
     required this.function,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
